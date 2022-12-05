@@ -1,0 +1,3 @@
+[submodule "Pegasus"]
+	path = Pegasus
+	url = https://github.com/kjcolley7/PEGASUS.git
