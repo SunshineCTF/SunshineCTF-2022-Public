@@ -1,0 +1,17 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+div.panel {
+    /* margin: 20px 5% 0 5%; */
+    padding: 0 20% 20% 20%;
+}
+
+#error {
+    color: red;
+}
+
+#flag {
+    color: blue;
+    font-family: monospace;
+}

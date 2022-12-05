@@ -1,0 +1,23 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="panel">
+  <div class="page-header">
+    <h1>Timely!!! Fanpage</h1>
+  </div>
+  <h2>Login</h2>
+  <form action="JavaScript:validate(this)">
+    <div class="login-pane">
+      <label>Username:</label>
+      <input type="text" placeholder="Enter Username" id="username" name="username" required>
+      <label>Password:</label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+  <p id="error"></p>
+  <p id="flag"></p>
+
+</div>
+{% endblock %}

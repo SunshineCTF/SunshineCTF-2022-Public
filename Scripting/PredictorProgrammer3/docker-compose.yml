@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  challenge-3:
+    build: ./challenge-part-3
+    ports:
+      - "${CHALLENGE_3_PORT}:65002/tcp"

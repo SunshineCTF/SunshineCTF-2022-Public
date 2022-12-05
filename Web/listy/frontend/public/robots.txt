@@ -1,0 +1,2 @@
+Disallow: *
+Disallow: /dev #TODO: Separate off dev branch (https://todo.sr.ht/~listydev/Listy/5)

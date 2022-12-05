@@ -1,0 +1,1 @@
+Introducing *Network Pong*: *Pong* for the Internet! In this game, you just ping random websites and try to get the lowest latency. It is protected with state-of-the-art anti-hacking techniques, so it should be *unhackable* according to our security team of well-trained monkeys and felines.

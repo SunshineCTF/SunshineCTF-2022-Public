@@ -1,0 +1,6 @@
+fen
+fen.debug
+fen.elf
+.gdb_history
+peda-session-*.txt
+default.Dockerfile

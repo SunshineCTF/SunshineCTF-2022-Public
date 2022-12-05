@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  challenge-1:
+    build: ./challenge-1
+    ports:
+      - "${CHALLENGE_1_PORT}:65000/tcp"
+    environment: 
+      CHALLENGE_2_PORT: ${CHALLENGE_2_PORT}
+      CHALLENGE_2_DOMAIN: ${CHALLENGE_2_DOMAIN}
