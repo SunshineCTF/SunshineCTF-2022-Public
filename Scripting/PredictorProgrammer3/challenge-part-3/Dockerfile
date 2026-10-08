@@ -2,6 +2,8 @@ FROM python:3.11-alpine
 
 RUN apk add --update socat
 
+ENV PYTHONUNBUFFERED=1
+
 # note: this Dockerfile is based on https://github.com/SunshineCTF/SunshineCTF-2017-Public/blob/master/Pwn/400-Notetorious/Dockerfile
 
 # Create unprivileged unprivileged user. lol.
@@ -19,4 +21,4 @@ RUN chown root:root /app /app/key /app/server-challenge-3.py && \
 
 # listens on the following port.
 EXPOSE 65002/tcp
-CMD socat -T 31 TCP-LISTEN:65002,fork,reuseaddr EXEC:"/app/server-challenge-3.py",su=unprivileged,pty,ctty,echo=0,stderr
+CMD socat -T 31 TCP-LISTEN:65002,fork,reuseaddr EXEC:"/app/server-challenge-3.py",su=unprivileged,stderr

@@ -1,4 +1,4 @@
-# [Crypto 200] Base128
+# [Crypto] Base128
 
 # Deployment
 No deployment necessary.

@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 from pwn import *
+import os
 
-REMOTE = bool(args.REMOTE)
+# Env-driven target so `pwnmake check` can point us at the started container.
+HOST = os.environ.get("HOST", "127.0.0.1")
+PORT = int(os.environ.get("PORT", 22001))
+REMOTE = True
 
 context.log_level = "warning"
 
-exe = ELF("fen")
+exe = ELF(".build/fen" if os.path.exists(".build/fen") else "fen")
 with context.local(log_level="error"):
-	exedbg = ELF("fen.debug", checksec=False)
+	exedbg = ELF(".build/fen.debug" if os.path.exists(".build/fen.debug") else "fen.debug", checksec=False)
 context(binary=exe)
 
 if REMOTE:
-	r = remote("127.0.0.1", 22001)
+	r = remote(HOST, PORT)
 else:
 	r = exe.process()
 	# gdb.attach(r, """

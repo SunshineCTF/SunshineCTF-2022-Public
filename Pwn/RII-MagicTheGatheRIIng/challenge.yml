@@ -1,0 +1,24 @@
+version: "0.1"
+name: "[RII] MagicTheGatheRIIng"
+author: "crandyman"
+category: Pwn
+description: |-
+  Who needs to debate MTG Arena vs MTG Online when you have Simplified Magic the GatheRIIng? None of the complexity, all of the pwnable fun.
+
+  Challenge sponsored by Research Innovations, Inc. (RII)
+
+  * [MagicTheGatheRIIng](/files/sun/22/Pwn/RII-MagicTheGatheRIIng/MagicTheGatheRIIng)
+  * [MagicTheGatheRIIng-libc.so](/files/sun/22/Pwn/RII-MagicTheGatheRIIng/MagicTheGatheRIIng-libc.so)
+attribution: "Written by crandyman for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 325
+connection_info: nc ctf.hackucf.org 22002
+flags:
+  - "sun{Witherbloom_Witchcraft_pRIIcon_is_best_pRIIcon}"
+tags:
+  - "sunshinectf-2022"
+  - "expert"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

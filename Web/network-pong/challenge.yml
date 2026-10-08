@@ -1,0 +1,19 @@
+version: "0.1"
+name: "Network Pong"
+author: "solarbonite"
+category: Web
+description: |-
+  Introducing *Network Pong*: *Pong* for the Internet! In this game, you just ping random websites and try to get the lowest latency. It is protected with state-of-the-art anti-hacking techniques, so it should be *unhackable* according to our security team of well-trained monkeys and felines.
+attribution: "Written by solarbonite for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 100
+connection_info: https://network-pong.ctf.hackucf.org
+flags:
+  - "sun{pin9_pin9-pin9_f1@9_pin9}"
+tags:
+  - "sunshinectf-2022"
+  - "beginner"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

@@ -1,9 +1,13 @@
-version: "3.3"
+name: sun22-predictor-programmer-2
 services:
   challenge-2:
     build: ./challenge-2
+    restart: unless-stopped
     ports:
-      - "${CHALLENGE_2_PORT}:65001/tcp"
-    environment: 
-      CHALLENGE_3_PORT: ${CHALLENGE_3_PORT}
-      CHALLENGE_3_DOMAIN: ${CHALLENGE_3_DOMAIN}
+      - "22202:65001/tcp"
+    environment:
+      CHALLENGE_3_PORT: "22203"
+      CHALLENGE_3_DOMAIN: "ctf.hackucf.org"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

@@ -1,3 +1,3 @@
-# [PWN 100] CTF Simulator
+# [PWN] CTF Simulator
 
 Build and deploy with PwnableHarness.

@@ -1,16 +1,13 @@
 # Timely
 
-Timing attack against authentication system.
+Web challenge (Flask app in `src/`).
 
-## Walkthrough
+## Deploy
 
-- Open page
-- Visit /robots.txt
-- Visit /dev
-- Visit /dev/users
-- Visit /login
-- Attempt to login with the active user `anri`
-- Realize that the HTTP Response has a `Debug-Lag-Fix` header with a time
-- Realize that Timely -> Timing attack for the response
-- Begin building up the SHA-1 hash as the lag goes up
-- Flag
+Deployed with the [docker-compose.yml](docker-compose.yml) in this folder (port 22302). `solve.py` is the solver used for sanity checking.
+
+## Files for players
+
+None; players only get the URL.
+
+See [writeup.md](writeup.md) for the solution.

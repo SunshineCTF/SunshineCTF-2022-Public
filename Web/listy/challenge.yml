@@ -1,0 +1,24 @@
+version: "0.1"
+name: "Listy"
+author: "Helithumper"
+category: Web
+description: |-
+  # Listy
+
+  I made a little leaderboard listy app, it's a bit rough so please don't judge me too harshly.
+
+  https://listy-web-u7jl3ge7qa-uc.a.run.app/
+
+  *Archive note: this was a serverless challenge hosted on the authors' own GCP project, not on the archive server. The site above may no longer work.*
+attribution: "Written by Helithumper for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 150
+flags:
+  - "sun{5erver1e55-9cp-i5-9re@+}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

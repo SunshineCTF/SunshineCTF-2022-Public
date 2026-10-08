@@ -1,4 +1,14 @@
+# NewGameOnline Writeup
+
 Multi-part question and answer style challenge.
+
+This is a fairly straightforward reverse engineering challenge, with the primary
+novelty being the gimmick of using `srand()` and `rand()` to build strings from
+awkward-looking "format strings". Once you figure out how to decode these GRSF
+encoded strings, it's a pretty normal challenge.
+
+Each question function matches exactly one input. At the end, all of these
+inputs are combined and used as an XOR key to decrypt the flag.
 
 
 ### Password

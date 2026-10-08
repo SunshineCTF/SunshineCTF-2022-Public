@@ -2,18 +2,11 @@
 
 ## Deployment
 
-1. XOR-encrypt a flag with `2357111317192329313741434753` and put it in the `message` variable. Avoid l33tspeak; it breaks my XOR logic.
-2. Compile the Go binary (`go build`).
-3. Use [UPX](https://github.com/upx/upx) to pack the binary: `upx -9 compile_go`
-4. Distribute `compile_go` as a different name (e.g. `plumber_game`).
+1. Encode the flag and put it in the `message` variable in `go_upx.go` (exact key and steps are in [writeup.md](writeup.md)).
+2. Compile the Go binary (`go build`) and post-process it as described in the writeup.
+3. Distribute the result as a different name (e.g. `plumber_game`).
 
-## Solution
+## Files for players
+- `plumber_game`
 
-1. Decompress the binary using UPX (note the `UPX!` strings!)
-2. Run `strings`, such as:
-```bash
-strings -n 8 compile_go | grep -v "\." | grep Alphabet
-```
-3. Find the password.
-4. Type in the password by running the binary.
-5. Get the flag!
+See [writeup.md](writeup.md) for the solution.

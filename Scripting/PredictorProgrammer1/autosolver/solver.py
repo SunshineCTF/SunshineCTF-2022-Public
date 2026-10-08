@@ -49,6 +49,15 @@ if len(sys.argv) > 1:
             "Unknown argument given. Continuing with normal DNS resolution instead."
         )
 
+# `pwnmake check` points us at a single running instance via HOST/PORT env
+# (overrides the docker-compose service name / internal port defaults).
+_env_host = os.getenv('HOST')
+_env_port = os.getenv('PORT')
+if _env_host:
+    challenge_domains[0] = _env_host
+if _env_port:
+    challenge_ports[0] = int(_env_port)
+
 print(f"Challenge domains chosen: {challenge_domains}")
 print(f"Challenge ports chosen: {challenge_ports}")
 

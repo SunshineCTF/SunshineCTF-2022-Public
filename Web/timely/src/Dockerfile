@@ -1,12 +1,8 @@
-FROM python:3.9-slim-buster
+FROM python:3.9-slim-bullseye
 WORKDIR /opt/chal
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-        build-essential \
-        python3-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# gevent/greenlet ship manylinux wheels for CPython 3.9, so no build toolchain
+# (and no apt, whose bullseye pool paths have since rotted) is needed.
 
 COPY requirements.txt /opt/chal/
 

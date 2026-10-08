@@ -1,0 +1,22 @@
+version: "0.1"
+name: "Base128"
+author: "shuga__"
+category: Crypto
+description: |-
+  Our researchers at CoolCryptoGames have been designing a new encoding algorithm for our Korean customers that is just as efficient as plain ol' text. However, they kind-of forgot how to decode their own algorithm, so can you help them decrypt this so they can patent it?
+
+  ```
+  걳걵걮걻걢갴걳갳걟갱갲갸걟갱갵걟걢갱건걟걲갳걭갴거거갱걮걧걽
+  ```
+attribution: "Written by shuga__ for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 75
+flags:
+  - "sun{b4s3_128_15_b1t_r3m4pp1ng}"
+tags:
+  - "sunshinectf-2022"
+  - "beginner"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

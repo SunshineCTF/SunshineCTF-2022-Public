@@ -1,0 +1,26 @@
+# ctfcli project config. Don't commit credentials here: set CTFCLI_URL and
+# CTFCLI_ACCESS_TOKEN in the environment instead (they override [config]).
+[config]
+url =
+access_token =
+
+[challenges]
+Crypto/AESChall =
+Crypto/base128 =
+Misc/half-a-jxl =
+Pwn/CTFSim =
+Pwn/ChessFEN =
+Pwn/RET2-Snake =
+Pwn/RII-EldenRIIngLite =
+Pwn/RII-MagicTheGatheRIIng =
+Reversing/LetsAGo =
+Reversing/MiddleEndian =
+Reversing/NewGameOnline =
+Scripting/PredictorProgrammer1 =
+Scripting/PredictorProgrammer2 =
+Scripting/PredictorProgrammer3 =
+Web/inspect-element =
+Web/listy =
+Web/network-pong =
+Web/timely =
+Web/transparent =

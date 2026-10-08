@@ -1,0 +1,21 @@
+version: "0.1"
+name: "Half a JXL"
+author: "shuga__"
+category: Misc
+description: |-
+  # Half a JXL
+  A friend of mine accidentially ripped this fancy-new JPEG file of mine in half, and I need help recovering the super-secret cheat code contained within. Do you think you can help out?
+
+  * [half.jxl](/files/sun/22/Misc/half-a-jxl/half.jxl)
+attribution: "Written by shuga__ for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 200
+flags:
+  - "sun{jp3gs_l1k3_b1n_tr33s}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

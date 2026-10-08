@@ -1,3 +1,5 @@
+UBUNTU_VERSION := 16.04
+
 FEN_DIR := $(DIR)
 FEN_BUILD := $(BUILD_DIR)
 TARGET := fen.unstripped
@@ -27,9 +29,12 @@ $(FEN_DIR)/fen.debug: $(FEN_BUILD)/fen.unstripped
 	$(_v)objcopy --only-keep-debug $< $@
 
 
-DOCKER_IMAGE := fen
+DOCKER_IMAGE := sun22-fen
 DOCKER_PORTS := 22001
 DOCKER_TIMELIMIT := 30
 # DOCKER_PASSWORD := grand master of haxx
 
 PUBLISH := fen
+
+# `pwnmake check`: run the solver and verify it prints the flag
+$(call ctf_check,$(DIR),$(DOCKER_PORTS),python3 solve.py)

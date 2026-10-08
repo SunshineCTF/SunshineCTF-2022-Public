@@ -1,4 +1,4 @@
-# [PWN 50] CTF Simulator
+# [PWN] CTF Simulator
 
 Very easy challenge. Step 1 is to enter a team name that's at least 20 bytes
 long to fill the `gs.name` buffer. This buffer is filled using `strncpy`, so

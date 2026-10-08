@@ -1,0 +1,21 @@
+version: "0.1"
+name: "CTF Simulator"
+author: "kcolley"
+category: Pwn
+description: |-
+  Step right up and compete to improve your ~~guessing~~ CTF skills!
+
+  * [ctf-simulator](/files/sun/22/Pwn/CTFSim/ctf-simulator)
+attribution: "Written by kcolley for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 75
+connection_info: nc ctf.hackucf.org 22000
+flags:
+  - "sun{gu355y_ch4ll3ng35_4r3_my_f4v0r1t3!}"
+tags:
+  - "sunshinectf-2022"
+  - "beginner"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

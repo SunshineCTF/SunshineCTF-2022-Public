@@ -1,14 +1,19 @@
 from pwn import *
+import os
 
+# Env-driven target so `pwnmake check` can point us at the started container
+# (HOST/PORT default to a local instance for manual runs).
+HOST = os.environ.get("HOST", "127.0.0.1")
+PORT = int(os.environ.get("PORT", 22000))
 REMOTE = 1
 
 context.log_level = "warning"
 
-exe = ELF("ctf-simulator")
+exe = ELF(".build/ctf-simulator" if os.path.exists(".build/ctf-simulator") else "ctf-simulator")
 context(binary=exe)
 
 if REMOTE:
-	r = remote("127.0.0.1", 22000)
+	r = remote(HOST, PORT)
 else:
 	r = exe.process()
 
@@ -24,7 +29,7 @@ seed = u32(seed_leak)
 info("Seed is %d" % seed)
 
 guesses = []
-helper = ELF("guess", checksec=False)
+helper = ELF(".build/guess" if os.path.exists(".build/guess") else "guess", checksec=False)
 hproc = helper.process([str(seed)])
 try:
 	while True:

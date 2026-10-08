@@ -1,8 +1,11 @@
-version: '3'
+name: sun22-inspect-element
 services:
   web:
-    image: inspect-element-nginx
     build:
       context: .
+    restart: unless-stopped
     ports:
-    - "8080:80"
+      - "127.0.0.1:22300:80"
+    mem_limit: 128m
+    cpus: 0.5
+    pids_limit: 512

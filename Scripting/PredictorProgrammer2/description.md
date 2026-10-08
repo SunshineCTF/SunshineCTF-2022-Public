@@ -15,7 +15,7 @@ Assuming I didn't do that I would need to give you a couple chances to get it ri
 
 Flag will be given by our backend in the standard `sun{}` format!
 
-Visit `predictor-castle.2022.sunshinectf.org 65001`, and play a game of predicting the future!
+Visit `ctf.hackucf.org 22202`, and play a game of predicting the future!
 
 ## Notes
 

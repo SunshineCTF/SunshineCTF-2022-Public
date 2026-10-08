@@ -1,0 +1,20 @@
+version: "0.1"
+name: "AESChall"
+author: "ratman"
+category: Crypto
+description: |-
+  My friend doesn't trust "galois fields" and thinks AES has a backdoor in its sboxes, so he made his own to use.
+
+  * [aeschall.py](/files/sun/22/Crypto/AESChall/aeschall.py)
+attribution: "Written by ratman for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 250
+flags:
+  - "sun{a3$_r34lly_n33ds_sub5tituti0n!}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

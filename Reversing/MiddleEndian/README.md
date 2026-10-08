@@ -11,10 +11,7 @@
 
 1. `middle_endian.py` also acts as a solver.
 
-## Solution
+## Files for players
+- `flag.png.me`
 
-1. Notice that the bytes are scrambled in a deterministic way (see: magic number)
-- Every *odd* byte is swapped with a byte equidistant from the other side.
-2. Write a script to un-scramble it (i.e. `middle_endian.py`).
-3. Run the script to re-order the bytes.
-4. Open the file and reveal the flag.
+See [writeup.md](writeup.md) for the solution.

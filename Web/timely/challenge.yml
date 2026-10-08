@@ -1,0 +1,21 @@
+version: "0.1"
+name: "Timely"
+author: "Helithumper"
+category: Web
+description: |-
+  # Timely
+
+  I've been on a real City Pop binge and thought I would share one of my favorite albums.
+attribution: "Written by Helithumper for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 125
+connection_info: https://timely.ctf.hackucf.org
+flags:
+  - "SUN{ci+ypopi56e5+pop2022}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

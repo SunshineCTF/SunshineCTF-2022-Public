@@ -4,3 +4,4 @@ fen.elf
 .gdb_history
 peda-session-*.txt
 default.Dockerfile
+fen.unstripped

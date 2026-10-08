@@ -1,0 +1,29 @@
+version: "0.1"
+name: "Inspect Element"
+author: "solarbonite"
+category: Web
+description: |-
+  # DONT inspect-element
+  Our education game servers are now secure.
+
+  They used to have flags on them, but we've made the website 100% secure now.
+
+  All malicious hackers are now instructed, do not use inspect element on this page.
+
+  Problemo solved!
+
+  ## Website
+  Navigate to our website: https://inspect-element.ctf.hackucf.org/login.html and fetch what you need to fetch. 100% secure!
+attribution: "Written by solarbonite for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 25
+connection_info: https://inspect-element.ctf.hackucf.org
+flags:
+  - "sun{prepare_for_a_lawsuit}"
+tags:
+  - "sunshinectf-2022"
+  - "beginner"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

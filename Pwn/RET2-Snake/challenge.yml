@@ -1,0 +1,20 @@
+version: "0.1"
+name: "RET2 Snake"
+author: "pernicious, RET2 Systems"
+category: Pwn
+description: |-
+  Can you slither your way to a shell? Give it a go [here](https://wargames.ret2.systems/ctf/5cbe29ac9494938d1c5331826fbb9f22/sunshinectf2022_snake)
+
+  * [sunshinectf2022_snake](/files/sun/22/Pwn/RET2-Snake/sunshinectf2022_snake)
+attribution: "Written by pernicious, RET2 Systems for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 400
+flags:
+  - "sun{4ll_th3_c00l_k1ds_dr4w_the1r_sh3llc0de_n0waday5}"
+tags:
+  - "sunshinectf-2022"
+  - "expert"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

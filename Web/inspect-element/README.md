@@ -1,6 +1,6 @@
 # Deployment
 Static web challenge.
-Deploy the contents of static-website to educashun-game.2022.sunshinectf.org [sic].
+Deploy the contents of static-website to inspect-element.ctf.hackucf.org.
 
 # Sanity check
 1. Run the solve.sh script

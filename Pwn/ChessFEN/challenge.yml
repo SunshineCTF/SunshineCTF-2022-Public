@@ -1,0 +1,21 @@
+version: "0.1"
+name: "ChessFEN"
+author: "kcolley"
+category: Pwn
+description: |-
+  I've heard of brilliant chess players exploiting en passant before, but this is something else!
+
+  * [fen](/files/sun/22/Pwn/ChessFEN/fen)
+attribution: "Written by kcolley for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 250
+connection_info: nc ctf.hackucf.org 22001
+flags:
+  - "sun{https://github.com/apple-oss-distributions/Chess/blob/Chess-319/Sources/MBCBoard.mm}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

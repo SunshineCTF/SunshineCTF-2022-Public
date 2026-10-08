@@ -19,7 +19,7 @@ Heh heh, turns out eval wasn't safe to use... ever.
 
 This year we take one step further! *_Minus the whole "user sends executable code to us that we then use python to execute," and all. That was a **minor** mistake._
 
-Visit `predictor.2022.sunshinectf.org 65000`, and play a game of predicting the future!
+Visit `ctf.hackucf.org 22201`, and play a game of predicting the future!
 
 But don't worry that this game will get old! The flags in this game are split into three kingdoms, with one flag in each... you'll never find them all! And since it's random, no two games will ever be alike!
 

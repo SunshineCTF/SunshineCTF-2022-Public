@@ -1,0 +1,20 @@
+version: "0.1"
+name: "Let's-a-Go!"
+author: "shuga__"
+category: Reversing
+description: |-
+  Hey, I found this weird game that is password-protected. I think it's a plumbing-themed platformer, but I'm unsure. Do you mind looking for the password for me? My schedule's kinda packed and I want to play later.
+
+  * [plumber_game](/files/sun/22/Reversing/LetsAGo/plumber_game)
+attribution: "Written by shuga__ for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 75
+flags:
+  - "sun{go_to_the_other_castle}"
+tags:
+  - "sunshinectf-2022"
+  - "beginner"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

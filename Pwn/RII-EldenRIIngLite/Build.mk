@@ -1,6 +1,6 @@
 TARGET := EldenRIIngLite
 
-CFLAGS := -Wl,-rpath=$$ORIGIN,--dynamic-linker=./ld-linux-x86-64.so.2,-z,origin
+UBUNTU_VERSION := 20.04
 
 BITS := 64
 NX := 1
@@ -8,14 +8,16 @@ CANARY := 1
 RELRO := 1
 STRIP := 1
 
-CC := gcc
-
-DOCKER_IMAGE := elden-riing-lite
+DOCKER_IMAGE := sun22-elden-riing-lite
 DOCKER_PORTS := 22003
 DOCKER_TIMELIMIT := 600
-DOCKER_RUN_ARGS := --read-only
 
-PUBLISH_LIBC := ./libc.so.6
-PUBLISH_LD := ./ld-linux-x86-64.so.2
+# Publish the exact libc and ld used by the challenge (from the 20.04 base image)
+PUBLISH_LIBC := $(TARGET)-libc.so
+PUBLISH_LD := ld-2.31.so
 PUBLISH_BUILD := $(TARGET)
-PUBLISH := $(PUBLISH_LIBC) $(PUBLISH_LD)
+
+# `pwnmake check`: run the solver and verify it prints the flag.
+# The exploit is probabilistic, so the solver self-retries.
+CHECK_TIMEOUT := 300
+$(call ctf_check_slow,$(DIR),$(DOCKER_PORTS),python3 sol.py)

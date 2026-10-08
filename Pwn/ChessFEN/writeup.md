@@ -1,4 +1,4 @@
-# [PWN TBD] ChessFEN
+# [PWN] ChessFEN
 
 Challenge built around a real-world bug that used to be present in the
 built-in Chess app on macOS back in 2017 (for Apple-internal folks,

@@ -1,6 +1,10 @@
-version: "3.3"
+name: sun22-predictor-programmer-3
 services:
   challenge-3:
     build: ./challenge-part-3
+    restart: unless-stopped
     ports:
-      - "${CHALLENGE_3_PORT}:65002/tcp"
+      - "22203:65002/tcp"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

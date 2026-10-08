@@ -1,0 +1,25 @@
+version: "0.1"
+name: "[RII] EldenRIIngLite"
+author: "Z1pburg3r"
+category: Pwn
+description: |-
+  Even as a lite version, Elden RIIng is too hard :( can you beat it for me so I can become the Elden Lard?
+
+  Challenge sponsored by Research Innovations, Inc. (RII)
+
+  * [EldenRIIngLite](/files/sun/22/Pwn/RII-EldenRIIngLite/EldenRIIngLite)
+  * [EldenRIIngLite-libc.so](/files/sun/22/Pwn/RII-EldenRIIngLite/EldenRIIngLite-libc.so)
+  * [ld-2.31.so](/files/sun/22/Pwn/RII-EldenRIIngLite/ld-2.31.so)
+attribution: "Written by Z1pburg3r for [SunshineCTF 2022](https://ctftime.org/event/1629)"
+type: standard
+value: 250
+connection_info: nc ctf.hackucf.org 22003
+flags:
+  - "sun{0_y0U_dOn7_h4v3_th3_RII6hT}"
+tags:
+  - "sunshinectf-2022"
+  - "intermediate"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

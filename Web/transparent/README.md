@@ -1,7 +1,13 @@
 # Transparent
 
-This is an easy web challenge where the user just needs to look in the certificate transparency logs for SunshineCTF.org to find the flag.
+Easy web challenge with no hosted service of its own.
 
 ## Deploy
 
-Using acme.sh, generate a cert with the specified subdomain
+Run `deploy.sh` (uses acme.sh with a Cloudflare DNS token).
+
+## Files for players
+
+None.
+
+See [writeup.md](writeup.md) for the solution.
